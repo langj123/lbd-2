@@ -1,0 +1,596 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"after",
+				"after_setup_theme"
+			],
+			[
+				"is_in",
+				"is_int"
+			],
+			[
+				"v",
+				"v_gvwr"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"categ",
+				"categories_display"
+			],
+			[
+				"col-lg-",
+				"col-lg-6"
+			],
+			[
+				"$qur",
+				"$queried"
+			],
+			[
+				"WP_Quer",
+				"WP_Query"
+			],
+			[
+				"$tax",
+				"$taxonomy"
+			],
+			[
+				"get_term",
+				"get_term_link"
+			],
+			[
+				"get_template",
+				"get_template_part"
+			],
+			[
+				"cate",
+				"categories_display"
+			],
+			[
+				"cat",
+				"categories_display"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"product",
+				"product-run-down"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"footer",
+				"footer_menu"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"imag",
+				"image-container"
+			],
+			[
+				"have",
+				"have_posts"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"register_taxono",
+				"register_taxonomy"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"get_temp",
+				"get_template_directory_uri"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-content/themes/little-big-diner/header.php",
+			"settings":
+			{
+				"buffer_size": 1274,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jacob/Sites/LBD/wp-content/themes/little-big-diner/functions.php",
+		"/Users/jacob/Sites/LBD/wp-content/themes/little-big-diner/style.css",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/template-parts/content-specs.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/header.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/taxonomy-vehicles_categories.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/template-parts/content-slider.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/front-page.php",
+		"/Users/jacob/Desktop/NEW.sql",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/template-parts/content-product-rundown.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/page-products.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/category-vehicles.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/functions.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/single-vehicles.php",
+		"/Users/jacob/Sites/NEW/wp-config.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/footer.php",
+		"/Users/jacob/Desktop/front-page.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/template-parts/content-features.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/page-product.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/single-product.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/index.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/single.php",
+		"/Users/jacob/Sites/NEW/wp-content/themes/new/inc/custom-header.php",
+		"/Users/jacob/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"head",
+			"<div class=\"col-lg-6\">\n				</div>",
+			"$data",
+			"post-thumbnails",
+			"											<",
+			"table",
+			"<tr>\n					<td></td>\n				</tr>",
+			"button",
+			"buttons",
+			"120px",
+			"-475px",
+			"-400px",
+			"transform: translateX(-400px);",
+			"zero",
+			"background",
+			"shadow",
+			"background",
+			"a {",
+			"a:visited",
+			"a {",
+			"link-button",
+			";\n",
+			"linear",
+			"background: linear-gradient(to bottom, rgba(2,12,18,0), rgba(2,12,18,0.95));",
+			"));",
+			"background: linear-gradient(to bottom, rgba(7,51,87,0), rgba(7,51,87,0.95));",
+			"modules",
+			"category_run_down_image",
+			"ul",
+			"footer",
+			"button",
+			"absol",
+			"navigation",
+			"media",
+			"vehicles",
+			"Vehicle",
+			"Vehicles",
+			"<?php if(get_field('hero_image')): ?>\n					<img src=\"<?php echo get_field('hero_image'); ?>\" />\n				<?php endif; ?>",
+			"Product",
+			"Products",
+			"products",
+			"Products",
+			"products",
+			");\n",
+			"  ",
+			"books",
+			"'your-plugin-textdomain'",
+			"'your-plugin-textdomain' ",
+			"Book",
+			"Genre",
+			"lrg",
+			"header",
+			"section",
+			"#page",
+			"page",
+			"site-branding",
+			"navigation",
+			"header",
+			"margin-top: 32px"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/little-big-diner/header.php",
+					"settings":
+					{
+						"buffer_size": 1274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"devel": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.404619117932,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sty",
+				"wp-content/themes/little-big-diner/style.css"
+			],
+			[
+				"style",
+				"wp-content/themes/little-big-diner/style.css"
+			],
+			[
+				"front",
+				"wp-content/themes/little-big-diner/front-page.php"
+			],
+			[
+				"slid",
+				"template-parts/content-slider.php"
+			],
+			[
+				"",
+				"front-page.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"page",
+				"page-products.php"
+			],
+			[
+				"conten",
+				"template-parts/content-product-rundown.php"
+			],
+			[
+				"pr",
+				"page-products.php"
+			],
+			[
+				"product",
+				"template-parts/content-product-rundown.php"
+			],
+			[
+				"pro",
+				"page-products.php"
+			],
+			[
+				"functions",
+				"functions.php"
+			],
+			[
+				"cont",
+				"template-parts/content-slider.php"
+			],
+			[
+				"footer",
+				"footer.php"
+			],
+			[
+				"hea",
+				"header.php"
+			],
+			[
+				"sing",
+				"single-vehicles.php"
+			],
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"func",
+				"functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true
+}

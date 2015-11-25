@@ -44,6 +44,7 @@ get_header(); ?>
 			</div><!-- col-lg-12 -->
 			<div class="col-lg-12">
 				<div class="gallery-cont gallery-ls">
+
 				</div><!-- gallery-cont -->
 			</div><!-- col-lg-12 -->
 			<div class="col-lg-12">
@@ -51,6 +52,9 @@ get_header(); ?>
 					<?php
 						if (function_exists('get_field')) {
 							echo get_field('rest_address');
+							echo get_field('restaurant_city_st_zip');
+							echo get_field('restaurant_phone');
+							echo get_field('restaurant_email');
 						}
 					?>
 				</div><!-- col-lg-6 -->

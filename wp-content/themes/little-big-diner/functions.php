@@ -114,7 +114,6 @@ add_action( 'widgets_init', 'little_big_diner_widgets_init' );
  * Enqueue scripts and styles.
  */
 function little_big_diner_scripts() {
-	wp_enqueue_style( 'little-big-diner-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'little-big-diner-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -158,5 +157,9 @@ function lbd_my_scripts() {
 	wp_enqueue_script('adele-font', 'https://use.typekit.net/hjh7ofv.js');
 	wp_enqueue_script('adele-font-try',  get_template_directory_uri() . "/js/adele-font-try.js", array('adele-font'));
 	wp_enqueue_script('lbd-scripts', get_template_directory_uri() . "/js/lbd-scripts.js", array('jquery'));
+
+	wp_register_style('bootstrap', get_template_directory_uri() . "/style/bootstrap.css" );
+	wp_register_style('lbd', get_stylesheet_uri(), array("bootstrap"));
+	wp_enqueue_style('lbd');
 }
 add_action( 'wp_enqueue_scripts', 'lbd_my_scripts' );

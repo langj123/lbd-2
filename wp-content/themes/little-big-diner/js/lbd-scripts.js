@@ -5,13 +5,37 @@ jQuery(document).ready(function($){
 	duration = 50,
 	finished = false, // used to check animation of letters
 	logo = $(".svg-oct"),
-	dattr = logo.attr("data-attr");
+	dattr = logo.attr("data-attr"),
+	pad = 300,
+	sectTop = $("#Lets-noodle-cont").offset().top + pad,
+	logoOct = $("#Lets-noodle"),
+	scrollBar = $(window).scrollTop(),
+	textBlurb = $(".text-blurb"),
+	wHeight = $(window).height();
 
+
+	// fade body in, octie animates down
+	var logoAnimate = (function(){
+
+			logo.animate({
+				opacity : 1,
+				top: 0
+
+			}, duration, function(){
+				finished = true;
+				logo.attr("data-attr", dattr + " svg-animate");
+
+			});
+
+			return finished;
+	})();
 	// animate opacity and postion of letters in svg logo
 	var letterAnimate = (function(){
 			var intv = setInterval(function(){
 
 				if (finished === true) {
+
+					// animate letter in logo
 					var len = letters.length,
 					i = 0;
 					var iterate = function(){
@@ -30,6 +54,7 @@ jQuery(document).ready(function($){
 						setTimeout(iterate, duration);
 					};
 
+
 					iterate();
 				clearInterval(intv);
 				}
@@ -37,20 +62,28 @@ jQuery(document).ready(function($){
 			}, duration);
 	})();
 
-	// Interval to check completion of letter animation
-	var octAnimate = (function(){
+	// scrolling function to determine whether animate at bottom
 
-			logo.animate({
-				opacity : 1,
-				top: 0
-
-			}, duration, function(){
-				finished = true;
-				logo.attr("data-attr", dattr + " svg-animate");
-
+	var scrollFunc = $(window).on("scroll", function(){
+		scrollBar = $(window).scrollTop();
+		if (scrollBar + wHeight >= sectTop) {
+			logoOct.attr("class", "init-animate");
+			textBlurb.css({
+				opacity : 1
 			});
-			return finished;
-	})();
+		} else if (scrollBar < sectTop) {
+			logoOct.removeAttr("class");
+		}
 
+	});
+
+
+	// gentle scroll to anchor links on page
+	$('#Primary-menu a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
 });
 

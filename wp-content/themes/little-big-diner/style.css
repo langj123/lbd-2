@@ -558,11 +558,16 @@ a:active {
 #site-navigation {
 	position: absolute;
 	background: #172B33;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
 	display: box;
     display: flexbox;
     display: flex;
 	overflow: hidden;
 	z-index: 100;
+	min-height: 52px;
 }
 .main-navigation {
 	clear: both;
@@ -572,7 +577,6 @@ a:active {
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
 	width: 100%;
@@ -680,8 +684,12 @@ a:active {
 		display: none;
 	}
 	.main-navigation ul {
+		display: -webkit-box;
+  		display: -moz-box;
+  		display: -ms-flexbox;
+  		display: -webkit-flex;
 		display: box;
-   		display: flexbox;
+    	display: flexbox;
     	display: flex;
 		align-items: center;
 		justify-content: center;
@@ -706,6 +714,9 @@ a:active {
 	}
 }
 @media screen and (max-width: 37.5em) {
+	.main-navigation ul {
+		display: none;
+	}
 	#site-navigation {
 		min-height: 53px;
 	}
@@ -1060,6 +1071,10 @@ object {
 	padding: 50px 30px;
 }
 #Contact-sect > .col-lg-6 {
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
 	display: box;
     display: flexbox;
     display: flex;
@@ -1255,6 +1270,10 @@ div.site-footer {
 	color: #58C2B9;
 	padding: 15px 50px 5px;
 	font-size: 14px;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
 	display: box;
     display: flexbox;
     display: flex;
@@ -1312,6 +1331,10 @@ div.site-footer {
 	padding: 0;
 }
 .col-main {
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
 	display: box;
     display: flexbox;
     display: flex;

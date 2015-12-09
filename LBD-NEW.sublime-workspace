@@ -276,6 +276,9 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/LBD/wp-content/themes/little-big-diner/style.css",
+		"/Users/jacob/Desktop/little.sql",
+		"/Applications/MAMP/htdocs/LBD/wp-config.php",
 		"/Applications/MAMP/htdocs/LBD/wp-content/themes/little-big-diner/functions.php",
 		"/Users/jacob/Sites/NEW/wp-config.php",
 		"/Users/jacob/Desktop/NEW.sql",
@@ -333,6 +336,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".main-navigation",
+			"display: flex;",
+			"display: flex",
 			"#Contac-",
 			"#Contac",
 			"#Contact-sec",
@@ -512,6 +518,10 @@
 		"selected_items":
 		[
 			[
+				"style",
+				"wp-content/themes/little-big-diner/style.css"
+			],
+			[
 				"functio",
 				"wp-content/themes/little-big-diner/functions.php"
 			],
@@ -526,10 +536,6 @@
 			[
 				"scrip",
 				"wp-content/themes/little-big-diner/js/lbd-scripts.js"
-			],
-			[
-				"style",
-				"wp-content/themes/little-big-diner/style.css"
 			],
 			[
 				"script",

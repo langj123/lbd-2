@@ -1,0 +1,28 @@
+# Thanks to: https://gist.github.com/jdbartlett/444295
+
+# Ignore everything in the root except the "wp-content" directory, plugins outline and favicons.
+/*
+!.gitignore
+!wp-content/
+!android-chrome-192x192.png
+!apple-touch-icon.png
+!browserconfig.xml
+!favicon-16x16.png
+!favicon-32x32.png
+!favicon.ico
+!manifest.json
+!mstile-150x150.png
+!safari-pinned-tab.svg
+**/.sass-cache/*
+
+# Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+ 
+# Ignore everything in the "plugins" directory, except the plugins you specify
+wp-content/plugins/*
+ 
+# Ignore everything in the "themes" directory, except the themes you specify
+wp-content/themes/*
+!wp-content/themes/little-big-diner/

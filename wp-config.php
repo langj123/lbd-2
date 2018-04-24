@@ -1,38 +1,38 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'little');
-
+define('DB_NAME', 'wordpress_35');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
-
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
-
+define('DB_PASSWORD', 'ROOT');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost:8889');
-
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,33 +46,24 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '+I-~sTn>3*{m1jb|(@m:t^(l>9j>8SHZ&j|8$s5v4$VJizZeny.7`PhbNI9d+{B/');
-
-define('SECURE_AUTH_KEY',  '4?Yol1d[A9v|G+YuZBXXL##OojFKAu&a*~BQ9+Cl~Ktj38G$*|2Vm8L3wq!&+8Rh');
-
-define('LOGGED_IN_KEY',    '};tiYi)9uQeEDaM|<I{Cfz|QSEtnsSl-LT!C<=S[_RlPXz;I}_|{x|l7X4 j8KU.');
-
-define('NONCE_KEY',        'Tti}h`HFwTt~yUC|5--,k1@xd*P,|$rFS^MCm hr>N5c.t2n?bAI0{OHo`tA*-- ');
-
-define('AUTH_SALT',        '/Q+t]mrzH4o}3Ska`vdN)/D8)KLxwU@[nI&-j--;l<sHPKKb6/l*4pd3#?f|b|AC');
-
-define('SECURE_AUTH_SALT', '!U}~}*f1f]6</s%=S@sFc*9R~UV<rjQhye [+l%-0dip?n`6%Kb#2huK&7U}K+9>');
-
-define('LOGGED_IN_SALT',   'nr|.o`46d{&]8R>-r.9+OO2do=ZnA0sp9+.cFyll7zrY[~o<igGI@$3M^+{Id3nZ');
-
-define('NONCE_SALT',       'v&o xCj.!7+)boYhOEf~dFmC(H1uLUe6!,t<7]|eR5Ts UK~tAbM;u^@/ u8s=aB');
-
+define('AUTH_KEY',         '9yw{Ll~d]?g;vrV/>PA~*y_<(~Ed(p:j)_ztR-db_5dJnLoAKZ1d[!:07gOMEt:.');
+define('SECURE_AUTH_KEY',  'K1Il;qt;zf{1N+lj*d?`Fx|R^4>raxm(X0%W_pa~o7*>~S*)#_^7/YduMK 3ek{o');
+define('LOGGED_IN_KEY',    'X*h-J?8si2E&$<@$8B=im7F7{@(eA!fU9W~S/% RS}R|)lLhZQT|h}:R-,_f=G>*');
+define('NONCE_KEY',        'V2+7u3=U!mJ,oAHsM{H&E5*)?G&06:9hv}Sf-S TdoG*P:uZG=e/<O3;B^i*I=[U');
+define('AUTH_SALT',        'QNulC2I3NQ2#3ms`(wG*@PNo)N#uUoGt*G[cAZPooAM9.Vv==0|uGcr)kU<Iru^<');
+define('SECURE_AUTH_SALT', 'P.]E7[-zh Et>JD6R|9{A7t/86:gY19xO.qZ.-Z$yKc5kf,+ls&:>>c[FC{F2j,y');
+define('LOGGED_IN_SALT',   'w:OCQFIj16.IMsBZO>t[Vim0S;Dr+~S&KVkH0N.[v]<G&),?s *R.!JS{Q/6ME<C');
+define('NONCE_SALT',       'HTo:C4S,;xZe =WR/jd*MKB+fG=iPyk+3KrLof I_vKpd.ZwKQ6pQ]V4B$x9QQEN');
 
 /**#@-*/
 
 /**
  * WordPress Database Table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'ldb_';
-
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -80,6 +71,11 @@ $table_prefix  = 'ldb_';
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 

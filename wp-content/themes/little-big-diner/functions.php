@@ -41,7 +41,8 @@ function little_big_diner_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-
+	add_image_size('lbd-portrait', 1605, 1260, array('center', 'center'));
+	add_image_size('lbd-landscape', 1605, 630, array('center', 'center'));
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'little-big-diner' ),
@@ -97,18 +98,18 @@ add_action( 'after_setup_theme', 'little_big_diner_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function little_big_diner_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'little-big-diner' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'little_big_diner_widgets_init' );
+// function little_big_diner_widgets_init() {
+// 	register_sidebar( array(
+// 		'name'          => esc_html__( 'Sidebar', 'little-big-diner' ),
+// 		'id'            => 'sidebar-1',
+// 		'description'   => '',
+// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+// 		'after_widget'  => '</aside>',
+// 		'before_title'  => '<h2 class="widget-title">',
+// 		'after_title'   => '</h2>',
+// 	) );
+// }
+// add_action( 'widgets_init', 'little_big_diner_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -154,12 +155,84 @@ require get_template_directory() . '/inc/jetpack.php';
 * Register TypeKit fonts
 */
 function lbd_my_scripts() {
-	wp_enqueue_script('adele-font', 'https://use.typekit.net/hjh7ofv.js');
+	wp_enqueue_script('adele-font', 'https://use.typekit.net/rbg1nig.js');
 	wp_enqueue_script('adele-font-try',  get_template_directory_uri() . "/js/adele-font-try.js", array('adele-font'));
 	wp_enqueue_script('lbd-scripts', get_template_directory_uri() . "/js/lbd-scripts.js", array('jquery'));
+	wp_enqueue_script( 'cray-egg', get_template_directory_uri() . '/js/crazy-egg.js', array());
 
 	wp_register_style('bootstrap', get_template_directory_uri() . "/style/bootstrap.css" );
 	wp_register_style('lbd', get_stylesheet_uri(), array("bootstrap"));
 	wp_enqueue_style('lbd');
 }
 add_action( 'wp_enqueue_scripts', 'lbd_my_scripts' );
+/**
+* Gallery Generator
+*/
+function lbd_gallery_gen($g, $t) {
+	if (function_exists('get_field')) {
+
+		$images = array();
+		for ($i = 0; $i < $t; $i++) {
+			array_push($images, $g[$i]);
+		}
+		return $images;
+	}
+}
+add_filter('after_setup_theme', 'lbd_gallery_gen');
+/**
+* Global Variables for use with ACF
+*/
+if (function_exists('get_field')) {
+	
+	$home_id = get_option('page_on_front');
+	$rest_menu = get_field('restaurant_menu', $home_id);
+	$rest_hours = get_field('restaurant_hours', $home_id);
+	$rest_address = get_field('restaurant_address', $home_id);
+	$rest_city = get_field('restaurant_city_st_zip', $home_id);
+	$rest_about = get_field('restaurant_about', $home_id);
+	$rest_email = get_field('restaurant_email', $home_id);
+	$rest_phone = get_field('restaurant_phone', $home_id);
+	$rest_gift = get_field('rest_gift_cards', $home_id);
+	$rest_fb = get_field('rest_facebook', $home_id);
+	$rest_twt = get_field('rest_twitter', $home_id);
+	$rest_inst = get_field('rest_instagram', $home_id);
+	$rest_hire = get_field('hiring_email', $home_id);
+	$rest_hiring = get_field('hiring', $home_id);
+
+}
+
+/**
+* Remove menu items from backend
+*/
+ function remove_menus () {
+ global $menu;
+ $user = wp_get_current_user();
+ // if ($user->ID!=1) { // can add this in so admin can have posts
+    $restricted = array('Posts', 'Comments');
+    end ($menu);
+    while (prev($menu)){
+        $value = explode(' ',$menu[key($menu)][0]);
+        if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+     }
+   }
+
+ add_action('admin_menu', 'remove_menus');
+/**
+* Redirect All non homepage requests
+*/
+ function lbd_page_template_redirect()
+{
+    if( !is_front_page() )
+    {
+        wp_redirect( home_url( '' ) );
+        exit();
+    }
+}
+add_action( 'template_redirect', 'lbd_page_template_redirect' );
+
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

@@ -1,8 +1,7 @@
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <div class="svg-content">
-	<h1><?php echo get_bloginfo('name') . " " . get_bloginfo('description');; ?></h1>
-<svg version="1.1" id="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 275.2" style="enable-background:new 0 0 612 275.2;" xml:space="preserve">
+	<h1><?php echo get_bloginfo('name') . " " . get_bloginfo('description'); ?></h1>
+<svg version="1.1" id="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 275.2" >
 <style type="text/css">
 	.st0{fill:#E35D26;}
 	.st1{fill:#FFFFFF;}

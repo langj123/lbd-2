@@ -178,12 +178,11 @@ function lbd_gallery_gen($g, $t) {
 		return $images;
 	}
 }
-add_filter('after_setup_theme', 'lbd_gallery_gen');
+add_action('before_header', 'lbd_gallery_gen', 10, 2);
 /**
 * Global Variables for use with ACF
 */
 if (function_exists('get_field')) {
-	
 	$home_id = get_option('page_on_front');
 	$rest_menu = get_field('restaurant_menu', $home_id);
 	$rest_hours = get_field('restaurant_hours', $home_id);
@@ -198,7 +197,6 @@ if (function_exists('get_field')) {
 	$rest_inst = get_field('rest_instagram', $home_id);
 	$rest_hire = get_field('hiring_email', $home_id);
 	$rest_hiring = get_field('hiring', $home_id);
-
 }
 
 /**

@@ -1101,7 +1101,7 @@ div.site-footer {
   width: 100%;
   background: #172B33;
   color: #58C2B9;
-  padding: 15px 50px 5px;
+  padding: 15px 25px 5px;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,8 +1341,8 @@ div.site-footer .col-lg-6 {
 /* sister links */
 .sister-restaurants {
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

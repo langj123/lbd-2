@@ -16,7 +16,7 @@ $sister_restaurants = get_field('sister_restaurants_list');
 
 	<?php if (sizeof($sister_restaurants) > 0) { ?>
 		<div class="sister-restaurants">
-			<h3>Also visit our sister restaurants locally</h3>
+			<h3>Also visit our sister restaurants locally&hellip;</h3>
 			<ul class="rest-list">
 			<?php
 				$list = '';

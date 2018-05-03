@@ -1446,8 +1446,8 @@ div.site-footer {
 .col-main.col-alt4 .col-lg-3:nth-child(2) {bottom:0; left:50%; position:absolute; right:25%; top:0; }
 .col-main.col-alt4 .col-lg-3:last-child {bottom:0; left:75%; position:absolute; right:0; top:0; }
 
-div.site-footer {display:block; text-align:center; }
-div.site-footer .col-lg-6 {display:inline-block; text-align:left; vertical-align:top; width:48%; }
+div.site-footer {text-align:center; }
+div.site-footer .col-lg-6 {display:block; text-align:left; vertical-align:top; width:50%; }
 
 @media screen and (max-width:767px){
 	.col-main .col-alt, .col-main > .info-sect {float:none; width:100%; }

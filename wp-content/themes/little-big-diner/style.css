@@ -1295,14 +1295,13 @@ div.site-footer {
   top: 0; }
 
 div.site-footer {
-  display: block;
   text-align: center; }
 
 div.site-footer .col-lg-6 {
-  display: inline-block;
+  display: block;
   text-align: left;
   vertical-align: top;
-  width: 48%; }
+  width: 50%; }
 
 @media screen and (max-width: 767px) {
   .col-main .col-alt, .col-main > .info-sect {

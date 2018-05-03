@@ -1478,6 +1478,7 @@ div.site-footer .col-lg-6 {display:inline-block; text-align:left; vertical-align
 	}
 	h3 {
 		width: 33.33333%;
+		white-space: nowrap;
 		@media screen and (max-width: $ms-large) {
 			width: 100%;
 			text-align: center;

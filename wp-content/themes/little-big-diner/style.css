@@ -1357,7 +1357,8 @@ div.site-footer .col-lg-6 {
       padding-left: 0;
       padding-right: 0; } }
   .sister-restaurants h3 {
-    width: 33.33333%; }
+    width: 33.33333%;
+    white-space: nowrap; }
     @media screen and (max-width: 1000px) {
       .sister-restaurants h3 {
         width: 100%;
